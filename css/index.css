@@ -41,6 +41,8 @@ svg {
 body {
     Font-family: Arial, Helvetica, serif;
     hyphens: auto;
+    
+   
 }
 
 h1,
@@ -70,24 +72,31 @@ label,
 .Header {
     width: 100%;
     min-height: 10vh;
-
+    background-color: white;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+
+
 }
 
 .Header-nav {
-    width: 70%;
+    width: 100%;
+    min-height: 10vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 5;
 }
 
 .Header-picture {
-    width: 8%;
-    min-height: 4vh;
+    width: 4%;
+    min-height: 2vh;
 
 }
 
@@ -131,21 +140,22 @@ label,
     border-radius: 5px;
     padding: 10px;
     background-color: green;
-    width: 40%;
+    width: 33%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: white;
 }
 
 .Carrito-span {
-
+    width: 50%;
     white-space: nowrap;
 }
 
 
 .Main-span {
+
     width: 100%;
     min-height: 11vh;
     display: flex;
@@ -184,7 +194,8 @@ label,
 .Carrousel {
 
     width: 70%;
-    min-height: 40vh;
+
+    min-height: 30vh;
 
 
     margin: 50px auto;
@@ -202,11 +213,7 @@ label,
     transition: all .3s ease;
 }
 
-.Carrousel-img {
 
-    object-fit: contain;
-
-}
 
 .Carrousel-arrow {
     width: 3rem;
@@ -228,13 +235,20 @@ label,
 .Carrousel-izq {
     width: 50%;
     background-color: rgb(155, 0, 0);
-    min-height: 29vh;
+    min-height: 30vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
     color: white;
+}
+
+.Carrousel-img {
+    width: 100%;
+    min-height: 30vh;
+    object-fit: cover;
+
 }
 
 .Carrousel-picture {
@@ -324,7 +338,7 @@ label,
 
 .Card-div {
     width: 90%;
-    min-height: 40vh;
+    min-height: 30vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -430,9 +444,9 @@ label,
 
 .Config {
 
-    margin: auto;
+    margin: 100px auto;
     width: 70%;
-    min-height: 10vh;
+    min-height: 20vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -443,6 +457,7 @@ label,
 
 .Config-izq {
     width: 50%;
+    min-height: 10vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -459,7 +474,7 @@ label,
 
 .Config-div {
     width: 100%;
-
+    min-height: 10vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -563,7 +578,7 @@ label,
 
 .Slider {
     margin: auto;
-    
+
     width: 70%;
     min-height: 30vh;
     position: relative;
@@ -577,10 +592,10 @@ label,
 }
 
 .Slider-card {
-    
+
     width: 19%;
     min-height: 20vh;
-    
+
     border-radius: 5px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     display: flex;
@@ -590,13 +605,16 @@ label,
     gap: 20px;
 
 }
-.Slider-picture{
+
+.Slider-picture {
     width: 40%;
 }
-.Slider-img{
+
+.Slider-img {
     object-fit: cover;
 }
-.SLider-p{
+
+.SLider-p {
     font-weight: 700;
 }
 
@@ -624,7 +642,7 @@ label,
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(155,0,0);
+    background-color: rgb(155, 0, 0);
 
 }
 
@@ -632,15 +650,16 @@ label,
     width: 50%;
     background-color: red;
 }
-.VodaTv-img{
+
+.VodaTv-img {
     object-fit: contain;
     width: 100%;
-    
+
 }
 
 .VodaTv-der {
     width: 50%;
-    
+
     background-color: black;
     color: white;
     display: flex;
@@ -695,7 +714,7 @@ label,
 
 
 
-.Footer{
+.Footer {
     width: 100%;
     min-height: 10vh;
     display: flex;
@@ -705,17 +724,584 @@ label,
     background-color: black;
     margin: 30px auto 0;
 }
-.Footer-h3{
+
+.Footer-h3 {
     color: white;
     font-weight: 600;
 }
 
+@media (max-width:1900px) {
+    .Carrousel-izq {
+        width: 50%;
+        height: 100%;
+    }
 
-@media (max-width: 1700px){
-    .Header-ul{
+    .Slider {
+        width: 80%;
+        min-height: 30vh;
+    }
+
+    .Slider-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Slider-img {
+        object-fit: cover;
+        padding: 20px;
+    }
+
+    .Card-div {
+
+        min-height: 35vh;
+    }
+
+    .Card-btn {
+        margin-bottom: 25px;
+        border-radius: 15px;
+    }
+
+    .Phone {
+        width: 30%;
         display: flex;
-        flex-flow: row  wrap;
-        gap: 20px;
+        flex-flow: row nowrap;
         justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .bi-telephone {
+        width: 15%;
+    }
+
+    .Carrito-span {
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 1700px) {
+    .Header {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Header-ul {
+        width: 60%;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Carrousel {
+        width: 80%;
+    }
+
+    .Carrousel-picture {
+        width: 50%;
+        height: 100%;
+    }
+
+    .Carrousel-h3 {
+        font-size: 1.5rem;
+    }
+
+    .Card {
+        min-width: 90%;
+        min-height: 20vh;
+
+        margin-bottom: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .Card-div {
+
+        width: 25%;
+
+
+
+        border-radius: 0px;
+    }
+
+    .Card-span {
+        font-size: 1rem;
+    }
+
+    .Card-h3 {
+        font-size: 3rem;
+    }
+
+    .Card-h2 {
+        font-size: 0.6rem;
+    }
+
+    .Card-btn {
+        margin-bottom: 25px;
+        border-radius: 15px;
+    }
+
+    .Config {
+        min-height: 30vh;
+    }
+
+    .Config-der {
+        width: 30%;
+    }
+
+    .Strong {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .Combo {
+        width: 90%;
+        min-height: 30vh;
+    }
+
+    .Phone {
+        width: 44%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .bi-telephone {
+        width: 15%;
+    }
+
+    .Carrito-span {
+        width: 80%;
+
+    }
+
+}
+
+@media (max-width:1400px) {
+    .Header-ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Header-li {
+        font-size: 1rem;
+    }
+
+    .Phone {
+        min-width: 40%;
+
+    }
+
+    .Carrito-span {
+        font-size: 0.8rem;
+    }
+
+    .Carrousel {
+        width: 90%;
+    }
+    .Combo{
+        width: 100%;
+        min-height: 40vh;
+        margin: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .Combo-li{
+        
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+    .Combo-svg{
+        width: 50%;
+        
+        
+    }
+    .Combo-p{
+        width: 50%;
+        
+    }
+
+    .bi {
+        width: 50%;
+    }
+
+    .Config {
+        width: 80%;
+    }
+
+    .Config-svg {
+        width: 20%;
+        min-height: 15vh;
+
+    }
+
+    .Config-izq {
+        width: 50%;
+    }
+
+    .Config-der {
+        width: 50%;
+    }
+    .Slider{
+        width: 80%;
+        margin: 50px;
+    }
+    .Slider-card{
+        width: 20%;
+        min-height: 30vh;
+        
+        padding: 10px;
+    }
+    .Slider-picture{
+        width: 60%;
+        height: 80%;
+    }
+    .SLider-p{
+        height: 20%;
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .Header-li {
+        font-size: 0.8rem;
+    }
+
+    .Carrousel-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Card {
+        width: 20%;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    .Card-div {
+        width: 33%;
+
+    }
+
+    .Config-div {
+        width: 90%;
+
+    }
+
+    .Config-h3 {
+        font-size: 0.7rem;
+    }
+
+    .Config-h4 {
+        font-size: 0.7rem;
+    }
+
+    .Config-p {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media(max-width:1000px) {
+    .Header-li{
+        font-size: 0.5rem;
+    }
+    .Carrousel {
+        width: 90%;
+        min-height: 20%;
+        padding: 20px;
+    }
+
+    .Carrousel-picture {
+        display: none;
+        width: 50%;
+        height: 100%;
+    }
+
+    .Carrousel-h3 {
+        width: 80%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+
+    .Carrousel-span {
+        width: 80%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+
+    .Carrousel-card {
+        width: 100%;
+    }
+
+    .Carrousel-izq {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .VodaTv-cont {
+        width: 100%;
+        margin: auto;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .VodaTv-cont--izq {
+
+        font-size: 3rem;
+    }
+
+    .Carrousel-botones {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .Card {
+        width: 20%;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    .Card-div {
+        width: 40%;
+
+    }
+
+    .Card-span {
+        font-size: 0.6rem;
+    }
+
+    .Carrito-span {
+        font-size: 0.5rem;
+    }
+
+    .bi-telephone {
+        width: 10%;
+    }
+
+}
+
+@media(max-width:800px) {
+    .Carrousel {
+        width: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+   
+
+    .Carrousel-izq {
+        width: 100%;
+        
+    }
+
+    .Card {
+       
+        margin: auto;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        
+
+    }
+
+    .Card-div {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .Header-ul {
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Config-der {
+        width: 30%;
+    }
+
+    .Config-izq {
+        width: 70%;
+    }
+
+    .Config-btn {
+        font-size: 0.4rem;
+    }
+
+    .Config-div {
+        width: 90%;
+
+    }
+
+    .Config-h3 {
+        font-size: 0.4rem;
+    }
+
+    .Config-h4 {
+        font-size: 0.4rem;
+    }
+
+    .Config-p {
+        font-size: 0.4rem;
+    }
+
+    .Strong {
+        
+        width: 100%;
+        min-height: 40vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Strong-strong {
+        font-size: 1rem;
+    }
+    .Combo{
+        
+        margin: auto;
+        width: 80%;
+        min-height: 30vh;
+    }
+    .Combo-li{
+        
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+    .Combo-svg{
+        width: 20%;
+        align-items: end;
+        
+    }
+    .Combo-p{
+        width: 80%;
+        font-size: 0.7rem;
+    }
+    .Slider{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .Slider-card{
+        width: 50%;
+        margin: auto;
+    }
+    .Todo{width: 100%;}
+    .Todo-h2{
+        font-size: 1.2rem;
+    }
+    .VodaTv{
+        width: 100%;
+    }
+}
+
+@media(max-width:700px) {
+    .Header-ul {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Header-li {
+        font-size: 0.4rem;
+
+    }
+
+    .Carrito-span {
+        font-size: 0.3rem;
+    }
+
+    .Carrito-li {
+        display: none;
+    }
+
+    .Phone {
+        display: flex;
+    }
+   
+
+}
+
+@media(max-width:560px) {
+    .Config {
+        width: 100%;
+    }
+
+    .Config-der {
+        width: 50%;
+    }
+
+    .Config-izq {
+        width: 70%;
+    }
+
+    .Config-svg {
+        width: 10%;
+        min-height: 5vh;
+        border: none;
+    }
+
+    .Config-btn {
+        font-size: 0.4rem;
+    }
+
+    .Config-div {
+        width: 70%;
+
+    }
+
+    .Config-h3 {
+        font-size: 0.3rem;
+    }
+
+    .Config-h4 {
+        font-size: 0.3rem;
+    }
+
+    .Config-p {
+        font-size: 0.3rem;
     }
 }
