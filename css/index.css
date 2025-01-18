@@ -41,8 +41,8 @@ svg {
 body {
     Font-family: Arial, Helvetica, serif;
     hyphens: auto;
-    
-   
+
+
 }
 
 h1,
@@ -730,6 +730,32 @@ label,
     font-weight: 600;
 }
 
+.Bubble {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    top: 160px;
+    right: 0;
+    background-image: linear-gradient(blue,yellow);
+}
+
+.Bubble-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Bubble:hover {
+    transform: scale(1.1);
+}
+
+
+
 @media (max-width:1900px) {
     .Carrousel-izq {
         width: 50%;
@@ -907,7 +933,8 @@ label,
     .Carrousel {
         width: 90%;
     }
-    .Combo{
+
+    .Combo {
         width: 100%;
         min-height: 40vh;
         margin: 50px;
@@ -917,22 +944,25 @@ label,
         align-items: center;
         gap: 0;
     }
-    .Combo-li{
-        
+
+    .Combo-li {
+
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
-    .Combo-svg{
+
+    .Combo-svg {
         width: 50%;
-        
-        
+
+
     }
-    .Combo-p{
+
+    .Combo-p {
         width: 50%;
-        
+
     }
 
     .bi {
@@ -956,21 +986,25 @@ label,
     .Config-der {
         width: 50%;
     }
-    .Slider{
+
+    .Slider {
         width: 80%;
         margin: 50px;
     }
-    .Slider-card{
+
+    .Slider-card {
         width: 20%;
         min-height: 30vh;
-        
+
         padding: 10px;
     }
-    .Slider-picture{
+
+    .Slider-picture {
         width: 60%;
         height: 80%;
     }
-    .SLider-p{
+
+    .SLider-p {
         height: 20%;
         font-size: 0.7rem;
     }
@@ -1019,9 +1053,10 @@ label,
 }
 
 @media(max-width:1000px) {
-    .Header-li{
+    .Header-li {
         font-size: 0.5rem;
     }
+
     .Carrousel {
         width: 90%;
         min-height: 20%;
@@ -1112,6 +1147,10 @@ label,
         width: 10%;
     }
 
+    .Bubble {
+        display: none;
+    }
+
 }
 
 @media(max-width:800px) {
@@ -1124,21 +1163,21 @@ label,
 
     }
 
-   
+
 
     .Carrousel-izq {
         width: 100%;
-        
+
     }
 
     .Card {
-       
+
         margin: auto;
         width: 80%;
         margin: auto;
         display: flex;
         flex-flow: row wrap;
-        
+
 
     }
 
@@ -1186,7 +1225,7 @@ label,
     }
 
     .Strong {
-        
+
         width: 100%;
         min-height: 40vh;
         display: flex;
@@ -1198,43 +1237,54 @@ label,
     .Strong-strong {
         font-size: 1rem;
     }
-    .Combo{
-        
+
+    .Combo {
+
         margin: auto;
         width: 80%;
         min-height: 30vh;
     }
-    .Combo-li{
-        
+
+    .Combo-li {
+
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
-    .Combo-svg{
+
+    .Combo-svg {
         width: 20%;
         align-items: end;
-        
+
     }
-    .Combo-p{
+
+    .Combo-p {
         width: 80%;
         font-size: 0.7rem;
     }
-    .Slider{
+
+    .Slider {
         width: 100%;
         display: flex;
         flex-flow: row wrap;
     }
-    .Slider-card{
+
+    .Slider-card {
         width: 50%;
         margin: auto;
     }
-    .Todo{width: 100%;}
-    .Todo-h2{
+
+    .Todo {
+        width: 100%;
+    }
+
+    .Todo-h2 {
         font-size: 1.2rem;
     }
-    .VodaTv{
+
+    .VodaTv {
         width: 100%;
     }
 }
@@ -1261,7 +1311,7 @@ label,
     .Phone {
         display: flex;
     }
-   
+
 
 }
 
